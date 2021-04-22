@@ -13,7 +13,7 @@ public class Main {
 
 
 
-        afficheTriangle(2);
+        afficheTriangle();
 
         nbVoyelles();
 
