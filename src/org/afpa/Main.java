@@ -16,6 +16,7 @@ public class Main {
         String mot;
         int nbVoyelles = 0;
         String VOYELLES = "aeiouy";
+        String plural ;
 
 
         System.out.println("===========================================");
@@ -39,7 +40,10 @@ public class Main {
         for (char a : mot.toCharArray()) {
             nbVoyelles = (VOYELLES.indexOf(a) >= 0) ? (nbVoyelles + 1) : nbVoyelles;
         }
-        System.out.printf("Il y a %d voyelle(s) dans %s.\n", nbVoyelles, mot);
+
+        plural = (nbVoyelles>1)?"voyelles":"voyelle";
+
+        System.out.printf("Il y a %d %s dans %s.\n", nbVoyelles,plural, mot);
 
 
 
